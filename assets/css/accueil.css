@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../font/Tangerine/Tangerine-Regular.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../font/Alegreya_Sans_SC/AlegreyaSansSC-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "font-2";
+  background: url();
+}
+
+.navbar {
+  background: #161516 !important;
+}
+
+.navbar a {
+  color: white !important;
+}
