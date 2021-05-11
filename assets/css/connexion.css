@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../font/Tangerine/Tangerine-Regular.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../font/Alegreya_Sans_SC/AlegreyaSansSC-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "font-2";
+  background: url();
+  background: #161516;
+  color: white;
+}
+
+/**********************************************************************************
+******************************  CONTAINER  *******************************************
+***********************************************************************************/
+.bg-container {
+  background: url(../img/bg-1.jpg) center/cover;
+  height: 100vh;
+  width: 100%;
+  /* margin: 0;
+  padding: 0; */
+}
+
+/**********************************************************************************
+******************************  BUTTON  *******************************************
+***********************************************************************************/
+
+.btn-co {
+  margin-left: 100px;
+  padding-top: 60px;
+}
+
+.btn-co a {
+  color: white;
+  font-size: 2.8rem;
+}
+
+/**********************************************************************************
+******************************  FORMULAIRE  ***************************************
+***********************************************************************************/
+
+.connexion-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  position: relative;
+}
+
+.connexion-cont h1 {
+  font-size: 6rem;
+  margin-bottom: 60px;
+}
+
+.connexion-cont p {
+  font-size: 15px;
+  position: absolute;
+  top: 79%;
+  left: 49%;
+}
+
+.connexion-cont a {
+  color: #b08f54;
+}
+
+#mail {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
+  width: 300px;
+  padding: 0 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+#password {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
+  width: 300px;
+  padding: 0 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+#submit {
+  height: 50px;
+  width: 300px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s;
+  outline: none;
+}
+
+#submit:hover {
+  background: white;
+  color: #161516;
+}

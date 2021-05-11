@@ -16,7 +16,12 @@
 body {
   font-family: "font-2";
   background: url();
+  background: #161516;
 }
+
+/**********************************************************************************
+******************************  NAVBAR  *******************************************
+***********************************************************************************/
 
 .navbar {
   background: #161516 !important;
@@ -24,4 +29,190 @@ body {
 
 .navbar a {
   color: white !important;
+}
+
+/**********************************************************************************
+******************************  ACCUEIL  *******************************************
+***********************************************************************************/
+
+.bg-accueil {
+  height: 95vh;
+  background: url(../img/bg-2.jpg) center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.acc-txt-container {
+  width: 50%;
+  font-family: "font-1";
+  margin-bottom: 50px;
+}
+
+.acc-txt-container h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.acc-txt-container h2 {
+  text-align: end;
+  font-size: 2.5rem;
+}
+
+.picto-acc {
+  font-size: 3rem;
+  border: 4px solid white;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.scroll {
+  width: 100%;
+}
+
+.scroll ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 200px;
+  font-size: 1.5rem;
+}
+
+.scroll-2 ul {
+  padding: 0;
+}
+
+.scroll-2 li {
+  padding: 0 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.scroll-2 a {
+  color: white;
+}
+
+.scroll-2 li:hover {
+  color: rgba(255, 255, 255, 0.452);
+  transform: scale(1.2);
+}
+
+/**********************************************************************************
+******************************  BOTTLES  *******************************************
+***********************************************************************************/
+
+.bg-bouteille {
+  background: url(../img/bg-1.jpg) center/cover;
+  /* padding-top: 200px; */
+  height: 1000px;
+  position: relative;
+}
+
+.bloc-bottle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid-bouteille {
+  width: 500px;
+  height: 500px;
+  background: #232323;
+  color: white;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+}
+
+.img-bouteille {
+  position: relative;
+}
+
+.img-bouteille img {
+  height: 500px;
+  position: absolute;
+  height: 550px;
+  left: -120px;
+  top: -50px;
+}
+
+.text-bouteille {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  text-align: left;
+  width: 90%;
+}
+
+.text-bouteille h3 {
+  font-size: 35px;
+}
+
+.text-bouteille a {
+  color: #b08f54;
+  margin-right: 100px;
+}
+
+.trait-bottle {
+  height: 1px;
+  width: 20px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.button-bottle {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}
+
+.button-bottle button {
+  background: none;
+  border: 1px solid white;
+  height: 70px;
+  width: 200px;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button-bottle button:hover {
+  background: white;
+  color: #161516;
+}
+
+/**********************************************************************************
+******************************  FOOTER  *******************************************
+***********************************************************************************/
+
+.foot-cont {
+  height: 100px;
+  width: 100%;
+  background: white;
+  font-size: 20px;
+}
+
+.foot-cont ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.foot-cont span {
+  color: #b08f54;
+  margin-left: 10px;
 }
