@@ -35,6 +35,33 @@ body {
 ******************************  ACCUEIL  *******************************************
 ***********************************************************************************/
 
+.btn-burger {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-burger:hover {
+  background: white;
+}
+
+.btn-burger a {
+  text-decoration: none;
+  width: 120px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-burger a:hover {
+  color: #161516 !important;
+}
+
 .bg-accueil {
   height: 95vh;
   background: url(../img/bg-2.jpg) center/cover;
@@ -160,6 +187,10 @@ body {
   font-size: 35px;
 }
 
+.text-bouteille h4 {
+  font-size: 20px;
+}
+
 .text-bouteille a {
   color: #b08f54;
   margin-right: 100px;
@@ -215,4 +246,85 @@ body {
 .foot-cont span {
   color: #b08f54;
   margin-left: 10px;
+}
+
+/**********************************************************************************
+******************************  RESPONSIVE  ***************************************
+***********************************************************************************/
+
+@media screen and (max-width: 1300px) {
+  .grid-bouteille {
+    width: 380px;
+    height: 380px;
+  }
+
+  .img-bouteille img {
+    height: 400px;
+    position: absolute;
+    left: -80px;
+    top: -20px;
+  }
+
+  .button-bottle button {
+    height: 50px;
+    width: 160px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bloc-bottle {
+    display: flex;
+    flex-direction: column;
+  }
+  .button-bottle {
+    display: none;
+  }
+
+  .foot-cont {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bg-accueil {
+    height: 20vh;
+  }
+
+  .acc-txt-container,
+  .picto-acc,
+  .scroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-bouteille {
+    width: 300px;
+    height: 300px;
+  }
+
+  .img-bouteille img {
+    height: 330px;
+    position: absolute;
+    left: -70px;
+    top: -30px;
+  }
+
+  .text-bouteille p {
+    display: none;
+  }
+
+  .text-bouteille a {
+    margin-right: 0;
+  }
+
+  .foot-cont {
+    font-size: 15px;
+  }
+
+  .foot-cont ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
