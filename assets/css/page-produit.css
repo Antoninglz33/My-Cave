@@ -160,3 +160,70 @@ body {
   color: #b08f54;
   margin-left: 10px;
 }
+
+/**********************************************************************************
+******************************  RESPONSIVE  ***************************************
+***********************************************************************************/
+
+@media screen and (max-width: 1000px) {
+  .foot-cont {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title-produit h1 {
+    font-size: 4rem;
+  }
+
+  .grid-bouteille {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    margin-bottom: 100px;
+  }
+
+  .img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-center img {
+    height: 400px;
+  }
+
+  .txt-left h2,
+  .txt-right h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-produit h1 {
+    font-size: 3rem;
+  }
+
+  .img-center img {
+    height: 300px;
+  }
+
+  .txt-left h2,
+  .txt-right h2 {
+    font-size: 1.2rem;
+  }
+
+  .p-produit {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .foot-cont {
+    font-size: 15px;
+  }
+
+  .foot-cont ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
