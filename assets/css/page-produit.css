@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../font/Tangerine/Tangerine-Regular.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../font/Alegreya_Sans_SC/AlegreyaSansSC-Regular.ttf);
+}
+@font-face {
+  font-family: "font-3";
+  src: url(../font/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "font-2";
+  background: url();
+  background: #161516;
+}
+
+/**********************************************************************************
+    ******************************  NAVBAR  *******************************************
+    ***********************************************************************************/
+
+.navbar {
+  background: #161516 !important;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.btn-burger {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-burger:hover {
+  background: white;
+}
+
+.btn-burger a {
+  text-decoration: none;
+  width: 120px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-burger a:hover {
+  color: #161516 !important;
+}
+
+/**********************************************************************************
+********************************  BODY  *******************************************
+***********************************************************************************/
+
+.bg-produit {
+  min-height: 80vh;
+  width: 100%;
+  background: url(../img/bg-1-produits.jpg) center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.title-produit h1 {
+  font-family: "font-3";
+  font-size: 6rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.13);
+}
+
+.grid-bouteille {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 100px;
+}
+
+.txt-left {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.txt-left h2 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.712);
+  font-weight: lighter;
+  font-family: "font-2";
+}
+
+.img-center img {
+  height: 500px;
+}
+
+.txt-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.txt-right h2 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.712);
+  font-weight: lighter;
+  font-family: "font-2";
+}
+
+.p-produit {
+  width: 50%;
+  color: rgba(255, 255, 255, 0.712);
+  text-align: justify;
+  margin-bottom: 110px;
+}
+
+/**********************************************************************************
+******************************  FOOTER  *******************************************
+***********************************************************************************/
+
+.foot-cont {
+  height: 100px;
+  width: 100%;
+  background: white;
+  font-size: 20px;
+}
+
+.foot-cont ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.foot-cont a {
+  color: #161516;
+  text-decoration: none;
+}
+
+.foot-cont a:hover {
+  border-bottom: 1px solid #161516;
+}
+
+.foot-cont span {
+  color: #b08f54;
+  margin-left: 10px;
+}

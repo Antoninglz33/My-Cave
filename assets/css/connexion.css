@@ -36,7 +36,7 @@ body {
 ***********************************************************************************/
 
 .btn-co {
-  margin-left: 100px;
+  margin-left: 5%;
   padding-top: 60px;
 }
 
@@ -111,3 +111,32 @@ body {
   background: white;
   color: #161516;
 }
+
+/**********************************************************************************
+******************************  RESPONSIVE  ***************************************
+***********************************************************************************/
+
+@media screen and (max-width: 600px) {
+  .btn-co a {
+    font-size: 2rem;
+  }
+
+  .connexion-cont h1 {
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+
+  #mail,
+  #password,
+  #submit {
+    width: 200px;
+    font-size: 15px;
+  }
+
+  .connexion-cont p {
+    font-size: 12px;
+    position: absolute;
+    top: 79%;
+    left: 42%;
+  }
+} ;

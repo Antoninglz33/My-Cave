@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../font/Tangerine/Tangerine-Regular.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../font/Alegreya_Sans_SC/AlegreyaSansSC-Regular.ttf);
+}
+@font-face {
+  font-family: "font-3";
+  src: url(../font/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "font-2";
+  background: url();
+  background: #161516;
+}
+
+/**********************************************************************************
+  ******************************  NAVBAR  *******************************************
+  ***********************************************************************************/
+
+.navbar {
+  background: #161516 !important;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.btn-burger {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-burger:hover {
+  background: white;
+}
+
+.btn-burger a {
+  text-decoration: none;
+  width: 120px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-burger a:hover {
+  color: #161516 !important;
+}
+
+/**********************************************************************************
+********************************  BODY  *******************************************
+***********************************************************************************/
+
+.bg-produits {
+  background: url(/assets/img/bg-1-produits.jpg) center/cover;
+  padding: 80px 0;
+}
+
+.title-produits {
+  /* padding-top: 80px; */
+  color: #b08f54;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+.trait-produits {
+  width: 80%;
+  height: 1px;
+  background: #b08f54;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.produits-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.produits-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 62%;
+  height: 380px;
+  background: rgb(116, 1, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(116, 1, 1, 1) 0%,
+    rgba(73, 8, 1, 1) 40%,
+    rgba(29, 0, 0, 1) 100%
+  );
+  margin-bottom: 30px;
+}
+
+.produits-grid-white {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 62%;
+  height: 380px;
+  background: rgb(182, 120, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(182, 120, 31, 1) 0%,
+    rgba(204, 143, 60, 1) 40%,
+    rgba(231, 167, 38, 1) 100%
+  );
+  margin-bottom: 30px;
+}
+
+.img-produits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-produits img {
+  height: 382px;
+}
+
+.text-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.text-cont h2 {
+  font-family: "font-3";
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+.text-cont p {
+  font-family: "font-2";
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.text-cont a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.815);
+  width: 160px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.815);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.text-cont a:hover {
+  background: #fff;
+  color: rgb(116, 1, 1);
+}
+
+/**********************************************************************************
+******************************  FOOTER  *******************************************
+***********************************************************************************/
+
+.foot-cont {
+  height: 100px;
+  width: 100%;
+  background: white;
+  font-size: 20px;
+}
+
+.foot-cont ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.foot-cont a {
+  color: #161516;
+  text-decoration: none;
+}
+
+.foot-cont a:hover {
+  border-bottom: 1px solid #161516;
+}
+
+.foot-cont span {
+  color: #b08f54;
+  margin-left: 10px;
+}
+
+/**********************************************************************************
+******************************  RESPONSIVE  ***************************************  
+***********************************************************************************/
+@media screen and (max-width: 1000px) {
+  .foot-cont {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .produits-grid-white,
+  .produits-grid {
+    min-height: 400px;
+    width: 90%;
+  }
+
+  .img-produits img {
+    height: 300px;
+  }
+
+  .text-cont h2 {
+    font-size: 2rem;
+  }
+
+  .text-cont p {
+    font-size: 12px;
+  }
+
+  .text-cont a {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .foot-cont {
+    font-size: 15px;
+  }
+
+  .foot-cont ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
