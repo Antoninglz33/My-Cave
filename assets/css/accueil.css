@@ -20,44 +20,6 @@ body {
 }
 
 /**********************************************************************************
-******************************  NAVBAR  *******************************************
-***********************************************************************************/
-
-.navbar {
-  background: #161516 !important;
-}
-
-.navbar a {
-  color: white !important;
-}
-
-.btn-burger {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-  height: 35px;
-  width: 120px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.btn-burger:hover {
-  background: white;
-}
-
-.btn-burger a {
-  text-decoration: none;
-  width: 120px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn-burger a:hover {
-  color: #161516 !important;
-}
-/**********************************************************************************
 ******************************  ACCUEIL  *******************************************
 ***********************************************************************************/
 
@@ -226,38 +188,6 @@ body {
 }
 
 /**********************************************************************************
-******************************  FOOTER  *******************************************
-***********************************************************************************/
-
-.foot-cont {
-  height: 100px;
-  width: 100%;
-  background: white;
-  font-size: 20px;
-}
-
-.foot-cont ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px;
-}
-
-.foot-cont a {
-  color: #161516;
-  text-decoration: none;
-}
-
-.foot-cont a:hover {
-  border-bottom: 1px solid #161516;
-}
-
-.foot-cont span {
-  color: #b08f54;
-  margin-left: 10px;
-}
-
-/**********************************************************************************
 ******************************  RESPONSIVE  ***************************************
 ***********************************************************************************/
 
@@ -288,10 +218,6 @@ body {
   }
   .button-bottle {
     display: none;
-  }
-
-  .foot-cont {
-    font-size: 15px;
   }
 }
 
@@ -326,14 +252,5 @@ body {
 
   .text-bouteille a {
     margin-right: 0;
-  }
-
-  .foot-cont {
-    font-size: 15px;
-  }
-
-  .foot-cont ul {
-    display: flex;
-    flex-direction: column;
   }
 }

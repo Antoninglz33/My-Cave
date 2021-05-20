@@ -1,0 +1,38 @@
+/**********************************************************************************
+******************************  NAVBAR  *******************************************
+***********************************************************************************/
+
+.navbar {
+  background: #161516 !important;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.btn-burger {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-burger:hover {
+  background: white;
+}
+
+.btn-burger a {
+  text-decoration: none;
+  width: 120px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-burger a:hover {
+  color: #161516 !important;
+}

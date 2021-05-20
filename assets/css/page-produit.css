@@ -165,12 +165,6 @@ body {
 ******************************  RESPONSIVE  ***************************************
 ***********************************************************************************/
 
-@media screen and (max-width: 1000px) {
-  .foot-cont {
-    font-size: 15px;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .title-produit h1 {
     font-size: 4rem;
@@ -214,16 +208,5 @@ body {
 
   .p-produit {
     width: 80%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .foot-cont {
-    font-size: 15px;
-  }
-
-  .foot-cont ul {
-    display: flex;
-    flex-direction: column;
   }
 }
