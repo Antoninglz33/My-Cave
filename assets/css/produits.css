@@ -172,45 +172,8 @@ body {
 }
 
 /**********************************************************************************
-******************************  FOOTER  *******************************************
-***********************************************************************************/
-
-.foot-cont {
-  height: 100px;
-  width: 100%;
-  background: white;
-  font-size: 20px;
-}
-
-.foot-cont ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px;
-}
-
-.foot-cont a {
-  color: #161516;
-  text-decoration: none;
-}
-
-.foot-cont a:hover {
-  border-bottom: 1px solid #161516;
-}
-
-.foot-cont span {
-  color: #b08f54;
-  margin-left: 10px;
-}
-
-/**********************************************************************************
 ******************************  RESPONSIVE  ***************************************  
 ***********************************************************************************/
-@media screen and (max-width: 1000px) {
-  .foot-cont {
-    font-size: 15px;
-  }
-}
 
 @media screen and (max-width: 900px) {
   .produits-grid-white,
@@ -235,16 +198,5 @@ body {
     width: 100px;
     height: 30px;
     font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .foot-cont {
-    font-size: 15px;
-  }
-
-  .foot-cont ul {
-    display: flex;
-    flex-direction: column;
   }
 }

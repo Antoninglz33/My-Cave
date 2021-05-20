@@ -20,8 +20,8 @@
 
             <div class="connexion-cont">
                 <h1>My Cave</h1>
-                <form action="connexion.php" method="POST">
-                    <input type="email" id="mail" name="mail" placeholder="Email"><br>
+                <form action="/php/traitementConnexion.php" method="POST">
+                    <input type="email" id="email" name="email" placeholder="Email"><br>
                     <input type="password" id="password" name="password" placeholder="Mot de passe"><br>
                     <input type="submit" id="submit" value="CONNEXION">
                 </form>

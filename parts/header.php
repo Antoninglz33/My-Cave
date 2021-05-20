@@ -4,3 +4,4 @@
 <link rel="stylesheet" href="/assets/css/navbar.css">
 <link rel="stylesheet" href="/assets/css/produits.css">
 <link rel="stylesheet" href="/assets/css/connexion.css">
+<link rel="stylesheet" href="./assets/css/page-produit.css">

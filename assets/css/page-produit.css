@@ -84,7 +84,7 @@ body {
   color: rgba(255, 255, 255, 0.13);
 }
 
-.grid-bouteille {
+.grid-bouteille-produit {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 100px;
@@ -130,38 +130,6 @@ body {
 }
 
 /**********************************************************************************
-******************************  FOOTER  *******************************************
-***********************************************************************************/
-
-.foot-cont {
-  height: 100px;
-  width: 100%;
-  background: white;
-  font-size: 20px;
-}
-
-.foot-cont ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px;
-}
-
-.foot-cont a {
-  color: #161516;
-  text-decoration: none;
-}
-
-.foot-cont a:hover {
-  border-bottom: 1px solid #161516;
-}
-
-.foot-cont span {
-  color: #b08f54;
-  margin-left: 10px;
-}
-
-/**********************************************************************************
 ******************************  RESPONSIVE  ***************************************
 ***********************************************************************************/
 
@@ -170,7 +138,7 @@ body {
     font-size: 4rem;
   }
 
-  .grid-bouteille {
+  .grid-bouteille-produit {
     display: grid;
     grid-template-columns: 30% 50% 20%;
     margin-bottom: 100px;

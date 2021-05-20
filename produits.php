@@ -35,7 +35,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident odit eveniet
                             vero rem laborum quibusdam quos, quisquam quae iste et consequatur ratione autem voluptates
                             repellendus necessitatibus impedit ea distinctio.</p>
-                        <a href="./page-produit.html">Voir le produit</a>
+                        <a href="/page-produit.php">Voir le produit</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident odit eveniet
                             vero rem laborum quibusdam quos, quisquam quae iste et consequatur ratione autem voluptates
                             repellendus necessitatibus impedit ea distinctio.</p>
-                        <a href="./page-produit.html">Voir le produit</a>
+                        <a href="/page-produit.php">Voir le produit</a>
                     </div>
                 </div>
             </div>
@@ -59,13 +59,7 @@
     </main>
 
     <footer>
-        <div class="foot-cont">
-            <ul>
-                <li><a href="">Contact <span><i class="fas fa-chevron-right"></i></span></a></li>
-                <li><a href="">Mention Légales <span><i class="fas fa-chevron-right"></i></span></a></li>
-                <li>@2021 my cave antonin gonzalez</li>
-            </ul>
-        </div>
+    <?php include('parts/footer.php'); ?>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
