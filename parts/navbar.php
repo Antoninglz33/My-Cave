@@ -1,5 +1,18 @@
  <!-- Navbar bootstrap -->
 
+ <?php
+    // $connexion = '';
+    // $deconnexion = '';
+
+    // if (isset($_SESSION)) {
+    //     $connexion = '<div class="d-flex me-5 btn-burger"><a href="/index.php">Se déconnecter</a></div>';
+    //     unset($_SESSION);
+    //     session_destroy();
+    // } else {
+    //     $connexion = '<div class="d-flex me-5 btn-burger"><a href="/page_connexion.php">Se connecter</a></div>';
+    // }
+
+    ?>
  <nav class="navbar navbar-expand-lg navbar-light bg-light ms-5">
      <div class="container-fluid">
          <a class="navbar-brand" href="/index.php">My Cave</a>
@@ -18,9 +31,24 @@
                      <a class="nav-link" href="#">Contact</a>
                  </li>
              </ul>
-             <div class="d-flex me-5 btn-burger">
-                 <a href="/page_connexion.php">Se connecter</a>
-             </div>
+             <?php
+
+                // $_SESSION['connected'] = true;
+
+                if (isset($_SESSION['connected']) && $_SESSION['connected'] == true && !isset($_GET['action'])) {
+
+                    echo '<div class="d-flex me-5 btn-burger"><a href="?action=deconnect">Se déconnecter</a></div>';
+                } elseif (isset($_GET['action']) && $_GET['action'] == 'deconnect' && isset($_SESSION['connected'])) {
+                    // $_SESSION['connected'] == false;
+                    echo '<div class="d-flex me-5 btn-burger"><a href="/page_connexion.php">Se connecter</a></div>';
+                    unset($_SESSION);
+                    session_destroy();
+                    // var_dump($_SESSION);
+                } else {
+                    echo '<div class="d-flex me-5 btn-burger"><a href="/page_connexion.php">Se connecter</a></div>';
+                }
+                ?>
+
          </div>
      </div>
  </nav>

@@ -63,5 +63,3 @@ $data = array(
  $stmt->execute($data);
  
  echo 'Bienvenue'. " " . $firstname;
-
-?>

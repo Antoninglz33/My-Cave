@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,7 +19,7 @@
 
     <header>
         <!-- Navbar bootstrap -->
-        <?php include('parts/navbar.php'); ?>
+        <?php require('parts/navbar.php'); ?>
     </header>
 
     <main>
@@ -23,6 +27,15 @@
         <div class="bg-produits">
             <div class="title-produits">
                 <h1>Notre collection</h1>
+                <?php
+
+                $_SESSION['connected'] = true;
+
+                if (isset($_SESSION['connected']) && $_SESSION['connected'] == true && !isset($_GET['action'])) {
+                    echo '<a href="" class="btn-ajout">Ajouter un article</a>';
+                    // unset($_SESSION);
+                }
+                ?>
             </div>
             <div class="trait-produits"></div>
             <div class="produits-cont">
@@ -59,7 +72,7 @@
     </main>
 
     <footer>
-    <?php include('parts/footer.php'); ?>
+        <?php include('parts/footer.php'); ?>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
