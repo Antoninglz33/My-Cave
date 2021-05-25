@@ -98,27 +98,12 @@ body {
   grid-template-columns: 30% 70%;
   width: 62%;
   height: 380px;
-  background: rgb(116, 1, 1);
+  background: rgb(22, 21, 22);
   background: linear-gradient(
     90deg,
-    rgba(116, 1, 1, 1) 0%,
-    rgba(73, 8, 1, 1) 40%,
-    rgba(29, 0, 0, 1) 100%
-  );
-  margin-bottom: 30px;
-}
-
-.produits-grid-white {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  width: 62%;
-  height: 380px;
-  background: rgb(182, 120, 31);
-  background: linear-gradient(
-    90deg,
-    rgba(182, 120, 31, 1) 0%,
-    rgba(204, 143, 60, 1) 40%,
-    rgba(231, 167, 38, 1) 100%
+    rgba(22, 21, 22, 1) 0%,
+    rgba(14, 13, 14, 1) 40%,
+    rgba(4, 4, 4, 1) 100%
   );
   margin-bottom: 30px;
 }
@@ -168,7 +153,7 @@ body {
 
 .text-cont a:hover {
   background: #fff;
-  color: rgb(116, 1, 1);
+  color: rgb(22, 21, 22);
 }
 
 /**********************************************************************************

@@ -38,7 +38,7 @@ if (empty($cepages) || strlen($cepages) < 4) {
     $data['cepages'] = strip_tags($_POST['cepages']);
 }
 
-if (empty($pays) || strlen($pays) < 4) {
+if (empty($pays) || strlen($pays) < 2) {
     $errors['pays'] = "erreur sur pays";
 } else {
     $pays = htmlspecialchars($_POST['pays']);
@@ -87,13 +87,13 @@ if (!empty($_FILES['picture']['tmp_name'])) {
             'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy'
         );
 
-        if (!is_dir("/assets/img" . $dossier)) {
-            mkdir("/assets/img" . $dossier, 0755);
+        if (!is_dir("../assets/img/" . $dossier)) {
+            mkdir("../assets/img/" . $dossier, 0755);
         }
 
         $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
 
-        if (move_uploaded_file($_FILES['picture']['tmp_name'], "/assets/img/" . $dossier . "/" . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+        if (move_uploaded_file($_FILES['picture']['tmp_name'], "../assets/img/" . $dossier . "/" . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
         {
             echo 'Upload effectué avec succès !';
         } else //Sinon (la fonction renvoie FALSE).

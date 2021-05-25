@@ -38,22 +38,50 @@ session_start();
                 ?>
             </div>
             <div class="trait-produits"></div>
+
+
+            <?php
+            try
+            {
+                // On se connecte à MySQL
+                $bdd = new PDO('mysql:host=localhost;dbname=mycave', 'root', '');
+                $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            }
+            catch(Exception $e)
+            {
+                // En cas d'erreur, on affiche un message et on arrête tout
+                die('Erreur : '.$e->getMessage());
+            }
+
+
+            // Si tout va bien, on peut continuer
+
+            // On récupère tout le contenu de la table jeux_video
+            $reponse = $bdd->query('SELECT nom, description, picture FROM article');
+
+            // On affiche chaque entrée une à une
+            while ($donnees = $reponse->fetch())
+            {
+            ?>
             <div class="produits-cont">
                 <div class="produits-grid">
                     <div class="img-produits">
-                        <img src="./assets/img/block_nine.png" alt="img-block-nine">
+                        <img src="<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['nom']; ?>">
                     </div>
                     <div class="text-cont">
-                        <h2>Block Nine</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident odit eveniet
-                            vero rem laborum quibusdam quos, quisquam quae iste et consequatur ratione autem voluptates
-                            repellendus necessitatibus impedit ea distinctio.</p>
+                        <h2><?php echo $donnees['nom']; ?></h2>
+                        <p><?php echo $donnees['description']; ?></p>
                         <a href="/page-produit.php">Voir le produit</a>
                     </div>
                 </div>
             </div>
+            <?php
+            }
 
-            <div class="produits-cont">
+            $reponse->closeCursor(); // Termine le traitement de la requête
+
+            ?>
+            <!-- <div class="produits-cont">
                 <div class="produits-grid-white">
                     <div class="img-produits">
                         <img src="./assets/img/bodega_lurton.png" alt="img-bodega-lurton">
@@ -67,7 +95,7 @@ session_start();
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </main>
 

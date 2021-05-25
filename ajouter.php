@@ -19,7 +19,7 @@ session_start();
     </header>
 
     <main>
-        <form action="/php/traitementAjouter.php" method="POST" enctype="multipart/form-data">
+        <form action="/php/traitement_ajouter.php" method="POST" enctype="multipart/form-data">
             <input type="text" id="nom" name="nom" placeholder="Nom">
             <input type="number" id="annee" name="annee" placeholder="Année" min="1900" max="2021">
             <input type="text" id="cepages" name="cepages" placeholder="Cépages">
