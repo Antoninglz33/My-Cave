@@ -32,7 +32,7 @@ session_start();
                 $_SESSION['connected'] = true;
 
                 if (isset($_SESSION['connected']) && $_SESSION['connected'] == true && !isset($_GET['action'])) {
-                    echo '<a href="" class="btn-ajout">Ajouter un article</a>';
+                    echo '<a href="/ajouter.php" class="btn-ajout">Ajouter un article</a>';
                     // unset($_SESSION);
                 }
                 ?>
