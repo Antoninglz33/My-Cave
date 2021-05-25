@@ -66,7 +66,7 @@ session_start();
             <div class="produits-cont">
                 <div class="produits-grid">
                     <div class="img-produits">
-                        <img src="<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['nom']; ?>">
+                        <img src="./assets/img/upload/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['nom']; ?>">
                     </div>
                     <div class="text-cont">
                         <h2><?php echo $donnees['nom']; ?></h2>
@@ -81,21 +81,6 @@ session_start();
             $reponse->closeCursor(); // Termine le traitement de la requête
 
             ?>
-            <!-- <div class="produits-cont">
-                <div class="produits-grid-white">
-                    <div class="img-produits">
-                        <img src="./assets/img/bodega_lurton.png" alt="img-bodega-lurton">
-                    </div>
-                    <div class="text-cont">
-                        <h2>Bodega Lurton</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident odit eveniet
-                            vero rem laborum quibusdam quos, quisquam quae iste et consequatur ratione autem voluptates
-                            repellendus necessitatibus impedit ea distinctio.</p>
-                        <a href="/page-produit.php">Voir le produit</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
     </main>
 

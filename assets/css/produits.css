@@ -161,7 +161,6 @@ body {
 ***********************************************************************************/
 
 @media screen and (max-width: 900px) {
-  .produits-grid-white,
   .produits-grid {
     min-height: 400px;
     width: 90%;
