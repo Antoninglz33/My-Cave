@@ -29,10 +29,10 @@ session_start();
                 <h1>Notre collection</h1>
                 <?php
 
-                $_SESSION['connected'] = true;
+                // $_SESSION['connected'] = true;
 
                 if (isset($_SESSION['connected']) && $_SESSION['connected'] == true && !isset($_GET['action'])) {
-                    echo '<a href="/ajouter.php" class="btn-ajout">Ajouter un article</a>';
+                    echo '<a href="./ajouter.php" class="btn-ajout">Ajouter un article</a>';
                     // unset($_SESSION);
                 }
                 ?>
@@ -41,16 +41,13 @@ session_start();
 
 
             <?php
-            try
-            {
+            try {
                 // On se connecte à MySQL
                 $bdd = new PDO('mysql:host=localhost;dbname=mycave', 'root', '');
                 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            }
-            catch(Exception $e)
-            {
+            } catch (Exception $e) {
                 // En cas d'erreur, on affiche un message et on arrête tout
-                die('Erreur : '.$e->getMessage());
+                die('Erreur : ' . $e->getMessage());
             }
 
 
@@ -60,21 +57,32 @@ session_start();
             $reponse = $bdd->query('SELECT nom, description, picture FROM article');
 
             // On affiche chaque entrée une à une
-            while ($donnees = $reponse->fetch())
-            {
+            while ($donnees = $reponse->fetch()) {
             ?>
-            <div class="produits-cont">
-                <div class="produits-grid">
-                    <div class="img-produits">
-                        <img src="./assets/img/upload/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['nom']; ?>">
+                <div class="produits-cont">
+                    <div class="modif-del">
+                        <?php
+
+                        // $_SESSION['connected'] = true;
+
+                        if (isset($_SESSION['connected']) && $_SESSION['connected'] == true && !isset($_GET['action'])) {
+                            echo "<a href=''>Modifier</a>";
+                            echo '<a href="/ajouter.php" class="btn-ajout">Suprimer</a>';
+                            // unset($_SESSION);
+                        }
+                        ?>
                     </div>
-                    <div class="text-cont">
-                        <h2><?php echo $donnees['nom']; ?></h2>
-                        <p><?php echo $donnees['description']; ?></p>
-                        <a href="/page-produit.php">Voir le produit</a>
+                    <div class="produits-grid">
+                        <div class="img-produits">
+                            <img src="./assets/img/upload/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['nom']; ?>">
+                        </div>
+                        <div class="text-cont">
+                            <h2><?php echo $donnees['nom']; ?></h2>
+                            <p><?php echo $donnees['description']; ?></p>
+                            <a href="/page-produit.php">Voir le produit</a>
+                        </div>
                     </div>
                 </div>
-            </div>
             <?php
             }
 

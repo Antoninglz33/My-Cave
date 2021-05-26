@@ -76,6 +76,10 @@ body {
   color: #b08f54;
   margin-left: 60px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 
 .trait-produits {
@@ -91,6 +95,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .produits-grid {
@@ -156,6 +161,41 @@ body {
   color: rgb(22, 21, 22);
 }
 
+.title-produits a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.815);
+  width: 160px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.815);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.title-produits a:hover {
+  background: #fff;
+  color: rgb(22, 21, 22);
+}
+
+.modif-del {
+  position: absolute;
+  top: 3%;
+  left: 65%;
+}
+
+.modif-del a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+
+.modif-del a:hover {
+  color: #ffffff88;
+  border-bottom: 1px solid #ffffff88;
+}
 /**********************************************************************************
 ******************************  RESPONSIVE  ***************************************  
 ***********************************************************************************/
@@ -182,5 +222,13 @@ body {
     width: 100px;
     height: 30px;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modif-del {
+    position: absolute;
+    top: 2%;
+    left: 50%;
   }
 }
