@@ -5,3 +5,5 @@
 <link rel="stylesheet" href="/assets/css/produits.css">
 <link rel="stylesheet" href="/assets/css/connexion.css">
 <link rel="stylesheet" href="./assets/css/page-produit.css">
+<link rel="stylesheet" href="./assets/css/modifier.css">
+<link rel="stylesheet" href="./assets/css/ajouter.css">

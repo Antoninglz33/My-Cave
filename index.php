@@ -21,9 +21,9 @@ session_start();
 
         <div class="bg-accueil">
             <div class="acc-txt-container">
-                <h1>Celui qui sait déguster ne boit
+                <h1>"Celui qui sait déguster ne boit
                     plus jamais de vin, mais il goûte
-                    ses suaves secrets.
+                    ses suaves secrets."
                 </h1>
                 <h2>Salvador Dali</h2>
             </div>

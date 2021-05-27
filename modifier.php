@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cave</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="formulaire.css">
+    <?php include('parts/header.php'); ?>
 </head>
 
 <body>
+
+
+    <div class="container-modif">
     <?php
     try {
         // On se connecte à MySQL
@@ -21,23 +23,25 @@
         die('Erreur : ' . $e->getMessage());
     }
 
-
-    $reponse = $bdd->query('SELECT id, nom, description, picture FROM article WHERE id=' . $_GET['id'])->fetch();
+    $getid= (int)htmlspecialchars($_GET['id']);
+    $reponse = $bdd->query('SELECT id, nom, description, picture FROM article WHERE id=' . $getid)->fetch();
 
     ?>
     <div class="formulaire">
-        <form action="traitement_modif.php" method="POST">
-            <input type="text" name="nom" id="nom" placeholder="Nom" value="<?php echo $reponse['nom'] ?>">
+        <form action="./php/traitement_modif.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="nom" id="nom" placeholder="Nom" value="<?php echo $reponse['nom'] ?>"> <br>
 
-            <textarea type="text" name="description" id="description" placeholder="Entrez une Description" value="<?php echo $reponse['description'] ?>"> </textarea>
+            <textarea type="text" name="description" id="description"> <?php echo $reponse['description'] ?></textarea><br>
 
-            <input type="file" name="picture" id="picture" value="<?php echo $reponse['picture'] ?>">
+            <input type="file" name="picture" id="picture" value="<?php echo $reponse['picture'] ?>"><br>
 
             <input type="hidden" name="id" value="<?php echo $reponse['id'] ?>">
 
             <input type="submit" id="btn" />
         </form>
     </div>
+    </div>
+
 </body>
 
 </html>

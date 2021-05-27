@@ -54,7 +54,7 @@ session_start();
             // Si tout va bien, on peut continuer
 
             // On récupère tout le contenu de la table jeux_video
-            $reponse = $bdd->query('SELECT nom, description, picture FROM article');
+            $reponse = $bdd->query('SELECT id, nom, description, picture FROM article');
 
             // On affiche chaque entrée une à une
             while ($donnees = $reponse->fetch()) {
@@ -66,8 +66,8 @@ session_start();
                         // $_SESSION['connected'] = true;
 
                         if (isset($_SESSION['connected']) && $_SESSION['connected'] == true && !isset($_GET['action'])) {
-                            echo "<a href=''>Modifier</a>";
-                            echo '<a href="/ajouter.php" class="btn-ajout">Suprimer</a>';
+                            echo '<a href="./modifier.php?id=' . $donnees['id'] . '">Modifier</a>';
+                            echo '<a href="./php/traitement_supr.php?id=' . $donnees['id'] . '">Suprimer</a>';
                             // unset($_SESSION);
                         }
                         ?>

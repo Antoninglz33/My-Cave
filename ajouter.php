@@ -18,19 +18,20 @@ session_start();
         <?php include('parts/navbar.php'); ?>
     </header>
 
+    <div class="container-ajt">
     <main>
         <form action="/php/traitement_ajouter.php" method="POST" enctype="multipart/form-data">
-            <input type="text" id="nom" name="nom" placeholder="Nom">
-            <input type="number" id="annee" name="annee" placeholder="Année" min="1900" max="2021">
-            <input type="text" id="cepages" name="cepages" placeholder="Cépages">
-            <input type="text" name="pays" id="pays" placeholder="Pays">
-            <input type="file" name="picture" id="picture">
-            <input type="text" id="region" name="region" placeholder="Région">
-            <textarea name="description" id="description" cols="30" rows="10" placeholder="Entrez une déscription"></textarea>
+            <input type="text" id="nom" name="nom" placeholder="Nom"><br>
+            <input type="number" id="annee" name="annee" placeholder="Année" min="1900" max="2021"><br>
+            <input type="text" id="cepages" name="cepages" placeholder="Cépages"><br>
+            <input type="text" name="pays" id="pays" placeholder="Pays"><br>
+            <input type="file" name="picture" id="picture"><br>
+            <input type="text" id="region" name="region" placeholder="Région"><br>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Entrez une déscription"></textarea><br>
             <input type="submit" id="submit" value="Ajouter">
         </form>
     </main>
-
+    </div>
     <footer>
         <?php include('parts/footer.php'); ?>
     </footer>
