@@ -140,8 +140,8 @@ body {
   }
 
   .grid-bouteille-produit {
-    display: grid;
-    grid-template-columns: 30% 50% 20%;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 100px;
   }
 
@@ -155,15 +155,16 @@ body {
     height: 400px;
   }
 
-  .txt-left h2,
-  .txt-right h2 {
+  .txt-left,
+  .txt-right {
     font-size: 1.3rem;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 600px) {
   .title-produit h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .img-center img {
@@ -177,5 +178,8 @@ body {
 
   .p-produit {
     width: 80%;
+  }
+  .title-produit h1 {
+    text-align: center;
   }
 }

@@ -6,6 +6,35 @@
   background: #161516 !important;
 }
 
+.deco a {
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+  position: relative;
+  cursor: pointer;
+}
+.deco a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  /* left: 20%; */
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.deco a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-nav a {
+  color: white;
+  margin-left: 30px;
+}
+
 .navbar a {
   color: white !important;
 }

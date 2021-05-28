@@ -24,7 +24,7 @@ body {
 ***********************************************************************************/
 
 .bg-accueil {
-  height: 95vh;
+  height: 92vh;
   background: url(../img/bg-2.jpg) center/cover;
   display: flex;
   justify-content: center;
@@ -91,16 +91,16 @@ body {
 
 .scroll-2 li:hover {
   color: rgba(255, 255, 255, 0.452);
-  transform: scale(1.2);
+  transform: translateY(-5px);
 }
 
 /**********************************************************************************
 ******************************  BOTTLES  *******************************************
 ***********************************************************************************/
-
+/*
 .bg-bouteille {
   background: url(../img/bg-1.jpg) center/cover;
-  /* padding-top: 200px; */
+  padding-top: 200px;
   height: 1000px;
   position: relative;
 }
@@ -139,7 +139,7 @@ body {
 .text-bouteille {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center; 
   flex-direction: column;
   text-align: left;
   width: 90%;
@@ -185,7 +185,7 @@ body {
 .button-bottle button:hover {
   background: white;
   color: #161516;
-}
+} */
 
 /**********************************************************************************
 ******************************  RESPONSIVE  ***************************************

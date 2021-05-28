@@ -95,7 +95,7 @@ if (!empty($_FILES['picture']['tmp_name'])) {
 
         if (move_uploaded_file($_FILES['picture']['tmp_name'], "../assets/img/" . $dossier . "/" . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
         {
-            echo 'Upload effectué avec succès !';
+            header('Location:/produits.php');
         } else //Sinon (la fonction renvoie FALSE).
         {
             $errors['upload'] = 'Echec de l\'upload !';
