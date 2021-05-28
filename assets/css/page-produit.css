@@ -86,8 +86,9 @@ body {
 
 .grid-bouteille-produit {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 30% 40% 30%;
   margin-bottom: 100px;
+  gap: 20px;
 }
 
 .txt-left {

@@ -23,29 +23,54 @@ session_start();
 
     <main>
 
-        <div class="bg-produit">
-            <div class="title-produit">
-                <h1>Block Nine</h1>
-            </div>
-            <div class="grid-bouteille-produit">
-                <div class="txt-left">
-                    <h2>California</h2>
-                    <h2>Pinot Noir</h2>
+        <?php
+        try {
+            // On se connecte à MySQL
+            $bdd = new PDO('mysql:host=localhost;dbname=mycave', 'root', '');
+            $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (Exception $e) {
+            // En cas d'erreur, on affiche un message et on arrête tout
+            die('Erreur : ' . $e->getMessage());
+        }
+
+
+        // Si tout va bien, on peut continuer
+
+        // On récupère tout le contenu de la table jeux_video
+        $getid = (int)htmlspecialchars($_GET['id']);
+        $reponse = $bdd->query("SELECT id , nom, cepages, annee, pays, description, picture FROM article WHERE id = $getid ");
+
+        // On affiche chaque entrée une à une
+        while ($donnees = $reponse->fetch()) {
+        ?>
+
+            <div class="bg-produit">
+                <div class="title-produit">
+                    <h1><?php echo $donnees['nom']; ?></h1>
                 </div>
-                <div class="img-center">
-                    <img src="./assets/img/block_nine.png" alt="img-block-nine">
+                <div class="grid-bouteille-produit">
+                    <div class="txt-left">
+                        <h2><?php echo $donnees['pays']; ?></h2>
+                        <h2><?php echo $donnees['cepages']; ?></h2>
+                    </div>
+                    <div class="img-center">
+                        <img src="./assets/img/upload/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['nom']; ?>">
+                    </div>
+                    <div class="txt-right">
+                        <h2><?php echo $donnees['annee']; ?></h2>
+                    </div>
                 </div>
-                <div class="txt-right">
-                    <h2>2010</h2>
+                <div class="p-produit">
+                    <?php echo $donnees['description']; ?>
                 </div>
             </div>
-            <div class="p-produit">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laudantium. Id, sequi ea iure provident
-                architecto illum assumenda est expedita. Pariatur consectetur aut et hic saepe mollitia dolorem
-                quibusdam, officia cum dolor fugit veritatis culpa assumenda odio harum eos eius facere? Minus,
-                molestias molestiae. Velit ullam laudantium corporis quaerat deleniti.
-            </div>
-        </div>
+
+        <?php
+        }
+
+        $reponse->closeCursor(); // Termine le traitement de la requête
+
+        ?>
 
     </main>
 

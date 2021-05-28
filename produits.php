@@ -79,7 +79,7 @@ session_start();
                         <div class="text-cont">
                             <h2><?php echo $donnees['nom']; ?></h2>
                             <p><?php echo $donnees['description']; ?></p>
-                            <a href="/page-produit.php">Voir le produit</a>
+                            <a href="./page-produit.php?id=<?php echo $donnees['id'] ?>">Voir le produit</a>
                         </div>
                     </div>
                 </div>

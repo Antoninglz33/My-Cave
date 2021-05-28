@@ -24,11 +24,12 @@ body {
 
 .container-ajt {
   background: url(../img/bg-1-produits.jpg) center/cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 100px 0;
 }
 
 #nom,
