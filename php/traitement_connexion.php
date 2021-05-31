@@ -19,7 +19,6 @@ if (!empty($_POST)) {
         'email' => $_POST['email']
     ));
     $user = $req->fetch(PDO::FETCH_ASSOC);
-    var_dump($user);
     if (!empty($user)) {
         if (password_verify($_POST['password'], $user['mdp'])) {
             $_SESSION['id'] = $user['id'];
@@ -27,10 +26,10 @@ if (!empty($_POST)) {
             $_SESSION['connected'] = true;
             header('Location:/index.php');
         } else {
-            $errors['password'] = 'Erreur! Password invalide.';
+            $errors['password'] = 'Erreur! Mot de passe ou adresse mail inconnue.';
         }
     } else {
-        $errors['utilisateur'] = 'Erreur! users inexistant.';
+        $errors['utilisateur'] = 'Erreur! Mot de passe ou adresse mail inconnue.';
     }
 } else {
     $errors['form'] = 'Erreur! Formulaire vide.';
