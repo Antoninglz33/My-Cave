@@ -22,7 +22,7 @@ if (!empty($_POST)) {
     if (empty($_POST['nom']) || strlen($_POST['nom']) < 4) {
         $errors['nom'] = "erreur sur le nom";
     } else {
-        $datas['nom'] = htmlspecialchars($_POST['nom']);
+        $datas['nom'] = htmlspecialchars(strip_tags($_POST['nom']));
     }
 
     if (empty($_POST['description']) || strlen($_POST['description']) < 4) {

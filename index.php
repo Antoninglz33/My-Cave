@@ -27,10 +27,10 @@ session_start();
                 </h1>
                 <h2>Salvador Dali</h2>
             </div>
-            <div class="picto-acc"><i class="fas fa-chevron-down"></i></div>
+            <div class="picto-acc"><i class="fas fa-wine-bottle"></i></div>
             <div class="scroll">
                 <ul>
-                    <li>Scroll</li>
+                    <li class="collection"><a href="./produits.php">Notre Collection</a></li>
                     <li>
                         <div class="scroll-2">
                             <ul>

@@ -10,7 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cave</title>
-    <?php include('parts/header.php'); ?>
+    <?php include('./parts/header.php'); ?>
 
 
 </head>
@@ -19,7 +19,7 @@ session_start();
 
     <header>
         <!-- Navbar bootstrap -->
-        <?php require('parts/navbar.php'); ?>
+        <?php require('./parts/navbar.php'); ?>
     </header>
 
     <main>

@@ -22,10 +22,6 @@
   text-decoration: none;
 }
 
-.foot-cont a:hover {
-  border-bottom: 1px solid #161516;
-}
-
 .foot-cont span {
   color: #b08f54;
   margin-left: 10px;

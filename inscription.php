@@ -5,12 +5,12 @@ $fichier = '';
 
 
 if(!empty($_POST)) {
-    $firstname = strip_tags($_POST['firstname']);
-    $lastname = strip_tags($_POST['lastname']);
-    $pseudo = strip_tags($_POST['pseudo']);
-    $email = strip_tags($_POST['email']);
-    $password = strip_tags($_POST['password']);
-    $password2 = strip_tags($_POST['password-2']);
+    $firstname = htmlspecialchars(strip_tags($_POST['firstname']));
+    $lastname = htmlspecialchars(strip_tags($_POST['lastname']));
+    $pseudo = htmlspecialchars(strip_tags($_POST['pseudo']));
+    $email = htmlspecialchars(strip_tags($_POST['email']));
+    $password = htmlspecialchars(strip_tags($_POST['password']));
+    $password2 = htmlspecialchars(strip_tags($_POST['password-2']));
 }else{
     echo 'aucune données reçu';
     die;
