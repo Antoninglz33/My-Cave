@@ -91,7 +91,7 @@ if (!empty($_POST)) {
     }
 
 
-    if (!empty($_POST)) {
+    if (!empty($datas['picture'])) {
         $sql = "UPDATE article SET nom = :nom, description = :description, picture = :picture WHERE id=" . $_POST['id'];
     } else {
         $sql = "UPDATE article SET nom = :nom, description = :description WHERE id=" . $_POST['id'];

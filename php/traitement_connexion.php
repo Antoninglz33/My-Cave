@@ -9,7 +9,7 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-$user = []; //DECLARER UN TABLEAU USERS[] QUI COMPORTERA LES USERS
+$user = []; //DECLARER UN TABLEAU USERS[] QUI COMPORTERA L'USER
 $errors = []; //DECLARER UN TABLEAU ERRORS[] QUI COMPORTERA LES ERREURS 
 
 if (!empty($_POST)) {
