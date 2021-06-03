@@ -53,7 +53,7 @@ $data = array(
 
 
  try {
-     $dbh = new PDO('mysql:host=localhost;dbname=mycave', 'root', '');
+     $dbh = new PDO('mysql:host=sql11.freemysqlhosting.net;dbname=sql11416775', 'sql11416775', 'ye33AWzK8d');
  } catch (PDOException $e) {
      print "Erreur !: " . $e->getMessage() . "<br/>";
      die();
