@@ -24,7 +24,7 @@ if (!empty($_POST)) {
             $_SESSION['id'] = $user['id'];
             $_SESSION['email'] = $user['email'];
             $_SESSION['connected'] = true;
-            header('Location:/index.php');
+            header('Location:/produits.php');
         } else {
             $errors['password'] = 'Erreur! Mot de passe ou adresse mail inconnue.';
         }
