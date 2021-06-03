@@ -10,13 +10,14 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cave</title>
-    <?php include('parts/header.php'); ?>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <?php include('./parts/header.php'); ?>
 
 </head>
 
 <body>
     <header>
-        <?php include('parts/navbar.php'); ?>
+        <?php include('./parts/navbar.php'); ?>
         <!-- PARTIE HOME PAGE 100VH-->
 
         <div class="bg-accueil">
@@ -43,55 +44,6 @@ session_start();
                 </ul>
             </div>
     </header>
-    <!-- PARTIE BOUTEILLE -->
-    <!-- <main>
-        <div class="bg-bouteille">
-            <div class="bloc-bottle">
-                <div class="bouteille-container">
-                    <div class="grid-bouteille">
-                        <div class="img-bouteille">
-                            <img src="./assets/img/block_nine.png" alt="bouteille block nine">
-                        </div>
-                        <div class="text-bouteille">
-                            <h3>Domaine du
-                                pavillon</h3>
-                            <h4>2007</h4>
-                            <div class="trait-bottle"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla nesciunt ad eligendi
-                                ullam
-                                minus. Architecto nisi repellendus libero molestiae porro?</p>
-                            <a href="">Voir plus <span><i class="fas fa-chevron-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bouteille-container">
-                    <div class="grid-bouteille">
-                        <div class="img-bouteille">
-                            <img src="./assets/img/bouscat.png" alt="bouteille bouscat">
-                        </div>
-                        <div class="text-bouteille">
-                            <h3>Domaine du
-                                pavillon</h3>
-                            <h4>2007</h4>
-                            <div class="trait-bottle"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla nesciunt ad eligendi
-                                ullam
-                                minus. Architecto nisi repellendus libero molestiae porro?</p>
-                            <a href="#">Voir plus <span><i class="fas fa-chevron-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="button-bottle">
-                <button>Tout Voir</button>
-            </div>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

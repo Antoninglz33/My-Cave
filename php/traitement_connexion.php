@@ -9,7 +9,7 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-$user = []; //DECLARER UN TABLEAU USERS[] QUI COMPORTERA LES USERS
+$user = []; //DECLARER UN TABLEAU USERS[] QUI COMPORTERA L'USER
 $errors = []; //DECLARER UN TABLEAU ERRORS[] QUI COMPORTERA LES ERREURS 
 
 if (!empty($_POST)) {
@@ -24,7 +24,7 @@ if (!empty($_POST)) {
             $_SESSION['id'] = $user['id'];
             $_SESSION['email'] = $user['email'];
             $_SESSION['connected'] = true;
-            header('Location:/index.php');
+            header('Location:/produits.php');
         } else {
             $errors['password'] = 'Erreur! Mot de passe ou adresse mail inconnue.';
         }

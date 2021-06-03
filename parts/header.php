@@ -7,3 +7,4 @@
 <link rel="stylesheet" href="./assets/css/page-produit.css">
 <link rel="stylesheet" href="./assets/css/modifier.css">
 <link rel="stylesheet" href="./assets/css/ajouter.css">
+<link rel="stylesheet" href="./assets/css/traitement.css">

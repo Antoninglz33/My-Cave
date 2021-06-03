@@ -10,12 +10,7 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-// $getid = (int)htmlspecialchars($_GET['id']);
-// var_dump($getid);
-// $sql = "DELETE * FROM article WHERE id = $getid";
 
 $getid = (int)htmlspecialchars($_GET['id']);
 $req = $bdd->exec("DELETE FROM article WHERE id = $getid");
-// $req->bindParam(':id', $user_id, PDO::PARAM_INT);
-// $req->execute();
 header('Location:/produits.php');
